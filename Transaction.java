@@ -109,7 +109,7 @@ public class Transaction implements TransactionInterface {
      * Setter method for payer
      * @param payer
      */
-    public void setPayer(Account payer) {
+    public void setPayer(AccountInterface payer) {
         this.payer = payer;
     }
 

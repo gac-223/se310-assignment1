@@ -11,26 +11,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 
-// Dependency Inversion Principle
-    // relies on Ledger
-    // create a Ledger interface
-
-// Open Closed Principle
-    // long switch case
-    // create an commandStrategyInterface
-        // applies to
-        // the actual function
-
-    // implement for each type of command
-        // createLedgerCommand class
-        // create classes for each type of command
-
-    // then in the commandProcessor class
-        // have a list of all the strategies
-        // then in process command
-            // loop thru each Strategy - check if it matches
-            // if applies --> then do the stuff and break
-
 
 /**
  * CommandProcessor class implementation designed to process individual Blockchain commands
@@ -42,7 +22,6 @@ public class CommandProcessor {
 
     private static LedgerInterface ledger ;
 
-    // a list of different strategies
     private final List<CommandStrategy> commandStrategies ;
 
     public void setLedger(LedgerInterface newLedger) {
@@ -51,7 +30,6 @@ public class CommandProcessor {
 
     public CommandProcessor() {
 
-        // this.ledger = ledger ;
 
         commandStrategies = new ArrayList<>() ;
 

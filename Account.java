@@ -1,12 +1,6 @@
 package com.se310.ledger;
 
 
-
-// make it implement the account interface
-    // and the cloneable interface
-    // 
-
-
 /**
  * Account class implementation representing account in the Blockchain
  *

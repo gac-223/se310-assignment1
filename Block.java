@@ -7,9 +7,6 @@ import java.util.Map;
 
 
 
-// make sure this implements Block Interface
-
-
 
 /**
  * Block class implementation representing block in the Blockchain
